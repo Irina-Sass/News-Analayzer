@@ -1,0 +1,12 @@
+/node_modules
+/dist
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+*~
+.tmp
+.idea
+.sublime
+.vscode
+.log
