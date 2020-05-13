@@ -1,0 +1,29 @@
+@import url(_theme_dark/header__link_theme_dark.css);
+@import url(_theme_light/header__link_theme_light.css);
+
+.header__link {
+    color: #B6BCBF;
+    font-family: 'Roboto', 'Arial', 'Helvetica', 'Nimbus Sans L', sans-serif;
+    font-size: 18px;
+    line-height: 80px;
+    font-weight: 500;
+    display: block;
+    height: 80px;
+    box-sizing: border-box;  
+    transition: border-bottom .2s;  
+}
+
+@media (max-width: 1023px) {
+    .header__link  {        
+        line-height: 64px; 
+        height: 64px;      
+    }
+}
+
+@media (max-width: 575px) {
+    .header__link  {
+        font-size: 16px;  
+        line-height: 56px; 
+        height: 56px;      
+    }
+}

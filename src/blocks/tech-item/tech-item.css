@@ -1,0 +1,25 @@
+@import url(__name/tech-item__name.css);
+@import url(__logo/tech-item__logo.css);
+
+.tech-item {
+    width: 120px;
+    height: 153px;
+    padding-right: 40px;
+    text-align: center;
+}
+
+.tech-item:last-of-type {
+    padding-right: 0px;
+}
+
+@media (max-width: 1170px) {
+    .tech-item  {
+        padding-right: 0;        
+    }
+}
+
+@media (max-width: 575px) {
+    .tech-item  {
+        padding-top: 33px;        
+    }
+}

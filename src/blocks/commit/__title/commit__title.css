@@ -1,0 +1,6 @@
+@media (max-width: 1023px) {
+    .commit__title {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}

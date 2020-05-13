@@ -1,0 +1,22 @@
+.info__title {
+    padding-top: 80px;
+    padding-bottom: 24px;
+}
+
+@media (max-width: 1023px) {
+    .info__title {
+        padding-top: 64px;
+        padding-bottom: 24px;
+        font-size: 32px;
+        line-height: 34px;
+    }
+}
+
+@media (max-width: 575px) {
+    .info__title {
+        padding-top: 0;
+        padding-bottom: 16px;
+        font-size: 30px;
+        line-height: 34px;
+    }
+}

@@ -1,0 +1,5 @@
+@media (max-width: 575px) {
+    .history__container-title {
+        padding-bottom: 16px;        
+    }   
+} 

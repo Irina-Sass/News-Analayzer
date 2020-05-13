@@ -1,0 +1,19 @@
+.tech__title {
+    flex-basis: 344px;
+    padding-top: 80px;
+    
+}
+
+@media (max-width: 1023px) {
+    .tech__title {
+        padding-top: 40px;
+        padding-right: 0px;
+    }
+}
+
+@media (max-width: 575px) {
+    .tech__title  {
+        padding-top: 32px;
+        line-height: 40px;        
+    }
+}

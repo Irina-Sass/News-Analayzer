@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Сервис для анализа происходящих в мире событий, позволяющий установить, насколько популярны новости на определённую тему.">
+    <meta name="author" content="Ирина Сасс">
+    <title>NewsAnalyzer</title>
+    <link rel="icon" href="<%=require('../images/favicon.ico').default%>">
+    <link rel="stylesheet" href="<%= htmlWebpackPlugin.files.chunks.analytics.css %>">
+</head>
+
+<body>
+    <div class="page">
+        <div class="content">
+            <header class="header section">
+                <div class="header__logo">
+                    <a href="./index.html" class="link link_theme_light">NewsAnalyzer</a>
+                </div>
+                <nav class="header__nav">
+                    <ul class="menu-row">
+                        <li class="menu-row__item  header__nav-item"><a href="./index.html" target="_self"
+                                class="link header__link header__link_theme_light">Главная</a></li>
+                        <li class="menu-row__item header__nav-item"><a href="./about.html" target="_self"
+                                class="link header__link header__link_theme_light">О проекте</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <section class="info section">
+                    <ul class="breadcrumb text">
+                        <li class="breadcrumb__item"><a href="./index.html" class="link breadcrumb__link">Главная</a>
+                        </li>
+                        <li class="breadcrumb__item breadcrumb__item_active">Аналитика</li>
+                    </ul>
+                    <h1 class="title title_big info__title">Вы спросили: «Путешествия»</h1>
+                    <p class="text info__text">Новостей за неделю: <span class="text text_bold">34 324</span></p>
+                    <p class="text info__text">Упоминаний в заголовках: <span class="text text_bold">235</span></p>
+                </section>
+                <section class="analytics-table  section">
+                    <h2 class="title title_small analytics-table__title">Аналитика по дням</h2>
+                    <div class="table">
+                        <div class="table__row table__row-header table__text">
+                            <div class="table__column-left">Дата <span class="table__analytics-month">(август)</span>
+                            </div>
+                            <div class="table__column-right">Кол-во упоминаний</div>
+                        </div>
+                        <div class="table__row">
+                            <div class="table__column-left"></div>
+                            <div class="table__column-right table__scale table__text">
+                                <div class="table__scale-value table__scale-value_position_start">0</div>
+                                <div class="table__scale-value table__scale-value_position_twenty-five">25</div>
+                                <div class="table__scale-value table__scale-value_position_center">50</div>
+                                <div class="table__scale-value table__scale-value_position_seventy-five">75</div>
+                                <div class="table__scale-value table__scale-value_position_end">100</div>
+                            </div>
+                        </div>
+                        <div class="table__row table__row_type_bar">
+                            <div class="table__column-left text">19, пн</div>
+                            <div class="table__column-right">
+                                <div class="table__bar table__text" style='width: 15%'>15</div>
+                            </div>
+                        </div>
+                        <div class="table__row table__row_type_bar">
+                            <div class="table__column-left text">20, вт</div>
+                            <div class="table__column-right">
+                                <div class="table__bar table__text" style='width: 18%'>18</div>
+                            </div>
+                        </div>
+                        <div class="table__row table__row_type_bar">
+                            <div class="table__column-left text">21, ср</div>
+                            <div class="table__column-right">
+                                <div class="table__bar table__text" style='width: 11%'>11</div>
+                            </div>
+                        </div>
+                        <div class="table__row table__row_type_bar">
+                            <div class="table__column-left text">22, чт</div>
+                            <div class="table__column-right">
+                                <div class="table__bar table__text" style='width: 39%'>39</div>
+                            </div>
+                        </div>
+                        <div class="table__row table__row_type_bar">
+                            <div class="table__column-left text">23, пт</div>
+                            <div class="table__column-right">
+                                <div class="table__bar table__text" style='width: 45%'>45</div>
+                            </div>
+                        </div>
+                        <div class="table__row table__row_type_bar">
+                            <div class="table__column-left text">24, сб</div>
+                            <div class="table__column-right">
+                                <div class="table__bar table__text" style='width: 73%'>73</div>
+                            </div>
+                        </div>
+                        <div class="table__row">
+                            <div class="table__column-left text">25, вс</div>
+                            <div class="table__column-right">
+                                <div class="table__bar table__text" style='width: 34%'>34</div>
+                            </div>
+                        </div>
+                        <div class="table__row">
+                            <div class="table__column-left"></div>
+                            <div class="table__column-right table__scale table__text">
+                                <div class="table__scale-value table__scale-value_position_start">0</div>
+                                <div class="table__scale-value table__scale-value_position_twenty-five">25</div>
+                                <div class="table__scale-value table__scale-value_position_center">50</div>
+                                <div class="table__scale-value table__scale-value_position_seventy-five">75</div>
+                                <div class="table__scale-value table__scale-value_position_end">100</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </section>
+            </main>
+            <footer class="footer section">
+                <p class="footer__copyright">© 2019 Supersite</p>
+                <nav class="footer__nav">
+                    <ul class="menu-row footer__menu">
+                        <li class="menu-row__item footer__nav-item"><a href="./index.html" target="_self"
+                                class="link footer__link">Главная</a></li>
+                        <li class="menu-row__item footer__nav-item"><a href="./about.html" target="_self"
+                                class="link footer__link">О проекте</a></li>
+                        <li class="menu-row__item footer__nav-item"><a href="https://praktikum.yandex.ru/"
+                                target="_blank" class="link footer__link">Яндекс.Практикум</a></li>
+                    </ul>
+                </nav>
+                <div class="footer__social">
+                    <a href="https://github.com/Irina-Sass" target="_blank" class="link footer__social-link">
+                        <img src="<%=require('../images/github.svg').default%>" alt="github"
+                            class="footer__social-icons">
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank" class="link footer__social-link">
+                        <img src="<%=require('../images/fb.svg').default%>" alt="fb" class="footer__social-icons">
+                    </a>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+
+    <script src="<%= htmlWebpackPlugin.files.chunks.analytics.entry %>"></script>
+</body>
+
+</html>

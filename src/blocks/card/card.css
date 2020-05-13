@@ -1,0 +1,19 @@
+@import url(__image/card__image.css);
+@import url(__data/card__data.css);
+@import url(__date/card__date.css);
+@import url(__link/card__link.css);
+@import url(__text/card__text.css);
+@import url(__title/card__titile.css);
+
+.card {    
+    background-color: #fff;
+    border-radius: 10px; 
+    position: relative;   
+}
+
+@media (max-width: 575px) {
+    .card  {
+       width: 100%;
+       margin-bottom: 8px;     
+    }
+}

@@ -1,0 +1,28 @@
+.search__title {
+    color: #fff;
+    font-family: 'Roboto Slab', 'Times New Roman', 'Times', 'Nimbus Roman No9 L', serif;
+    font-size: 60px;
+    line-height: 64px;
+    font-weight: normal;
+    margin: 0;
+}
+
+@media (max-width: 1023px) {
+    .search__title {
+        font-size: 36px;
+        line-height: 40px;
+        width: 70%; 
+    }
+}
+
+@media (max-width: 575px) {
+    .search__title {
+        padding-left: 3px; 
+    }
+}
+
+@media (max-width: 350px) {
+    .search__title {
+        width: 100%;
+    }
+}

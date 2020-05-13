@@ -1,0 +1,18 @@
+.title_small {
+    font-size: 26px;
+    line-height: 30px;
+}
+
+@media (max-width: 1023px) {
+    .title_small {
+        font-size: 22px;
+        line-height: 24px;
+    }
+}
+
+@media (max-width: 575px) {
+    .title_small {
+        font-size: 22px;
+        line-height: 28px;
+    }
+}

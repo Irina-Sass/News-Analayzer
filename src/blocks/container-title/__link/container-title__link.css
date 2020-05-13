@@ -1,0 +1,42 @@
+.container-title__link {
+    font-family: 'Roboto', 'Arial', 'Helvetica', 'Nimbus Sans L', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;     
+    color: #1A1B22;
+    padding-top: 14px; 
+    padding-right: 24px;
+    position: relative;
+    display: block;
+}
+
+
+.container-title__link::after {
+    content: '';
+    position: absolute; 
+    height: 24px;
+    width: 24px;    
+    background-image: url(../../../images/icon-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    right: 0;
+}
+
+.container-title__link:hover.container-title__link::after {
+    background-size: contain;  
+}
+
+@media (max-width: 1023px) {
+    .container-title__link  {
+        padding-top: 7px; 
+        padding-right: 26px;  
+    }
+}
+
+@media (max-width: 575px) {
+    .container-title__link  {
+        padding-top: 16px;
+        margin-left: -4px;
+        width: 197px;        
+    }
+}

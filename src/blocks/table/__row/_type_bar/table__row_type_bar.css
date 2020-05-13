@@ -1,0 +1,9 @@
+.table__row_type_bar {
+    margin-bottom: 56px;
+}
+
+@media (max-width: 575px) {
+    .table__row_type_bar {
+        margin-bottom: 24px;
+    }
+}

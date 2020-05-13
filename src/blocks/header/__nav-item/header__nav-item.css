@@ -1,0 +1,9 @@
+.header__nav-item {
+    margin-right: 34px;
+}
+
+@media (max-width: 575px) {
+    .header__nav-item {
+        margin-right: 11px;        
+    }
+}

@@ -1,0 +1,7 @@
+@import url(__image/error__image.css);
+@import url(__text/error__text.css);
+
+.error {
+    text-align: center;
+    display: none;    
+}

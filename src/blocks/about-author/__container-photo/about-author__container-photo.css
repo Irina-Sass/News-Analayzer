@@ -1,0 +1,20 @@
+.about-author__container-photo {
+    align-self: center;
+    width: 38%;
+}
+
+@media (max-width: 1023px) {
+    .about-author__container-photo {
+        width: 34%;
+        margin-top: 21px;
+        
+    }
+}
+
+@media (max-width: 575px) {
+    .about-author__container-photo {
+        width: 95%;
+        margin-top: 0;
+        margin-bottom: 19px;        
+    }
+}

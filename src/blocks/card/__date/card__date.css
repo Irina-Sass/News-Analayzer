@@ -1,0 +1,15 @@
+.card__date {
+    margin: 0;
+    padding-bottom: 12px;
+    font-family: 'Source Sans Pro', 'Arial', 'Helvetica', 'Nimbus Sans L', sans-serif;   
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #B6BCBF;
+}
+
+@media (max-width: 575px) {
+    .card__date  {
+        padding-bottom: 15px;
+    }
+}
