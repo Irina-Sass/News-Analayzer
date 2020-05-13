@@ -1,0 +1,20 @@
+.about-author__description {
+    width: 49%;
+    margin-top: 51px;
+    margin-left: 52px;
+}
+
+@media (max-width: 1023px) {
+    .about-author__description {
+        width: 62%;
+        margin-top: 0;
+        margin-left: 32px;
+    }
+}
+
+@media (max-width: 575px) {
+    .about-author__description {
+        width: 100%;
+        margin-left: 0;
+    }
+}

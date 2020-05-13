@@ -1,0 +1,9 @@
+.footer__social :last-child {
+    margin-right: 0;    
+}
+
+@media (max-width: 575px) {
+    .footer__social {
+        align-self: start;
+    }
+}

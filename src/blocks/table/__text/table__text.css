@@ -1,0 +1,7 @@
+.table__text {
+    font-family: 'Roboto', 'Arial', 'Helvetica', 'Nimbus Sans L', sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+}

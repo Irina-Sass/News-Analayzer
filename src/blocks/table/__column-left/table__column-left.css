@@ -1,0 +1,16 @@
+.table__column-left {
+    width: 104px;    
+}
+
+@media (max-width: 1023px) {
+    .table__column-left {
+        padding-right: 13px;
+    }
+}
+
+@media (max-width: 575px) {
+    .table__column-left {
+        padding-right: 16px;
+        width: 64px;
+    }
+}

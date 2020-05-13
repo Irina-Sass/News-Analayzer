@@ -1,0 +1,18 @@
+.footer__link {
+    font-family: 'Roboto', 'Arial', 'Helvetica', 'Nimbus Sans L', sans-serif;
+    font-size: 18px;
+    line-height: 24px; 
+    color: #1A1B22;
+    transition: border-bottom 2s; 
+    box-sizing: border-box;
+}
+
+.footer__link:hover {   
+    border-bottom: 1px solid #1A1B22;
+}
+
+@media (max-width: 1023px) {
+    .footer__link {
+        font-family: 'Source Sans Pro', 'Arial', 'Helvetica', 'Nimbus Sans L', sans-serif;
+    }
+}

@@ -1,0 +1,17 @@
+.card__data {
+    box-sizing: border-box;
+    padding: 20px 24px 54px;      
+}
+
+@media (max-width: 1023px) {
+    .card__data  {
+        padding: 16px 16px 46px;
+    }
+}
+
+@media (max-width: 575px) {
+    .card__data  {
+        padding-top: 15px;
+        padding-bottom: 42px;
+    }
+}

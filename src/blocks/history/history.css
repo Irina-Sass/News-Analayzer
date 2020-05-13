@@ -1,0 +1,24 @@
+@import url(__title/history__title.css);
+@import url(__title-link/history__title-link.css);
+@import url(__container-title/history__container-title.css);
+
+.history {
+    background-color: #F5F6F7;
+    padding-top: 72px;
+    padding-bottom: 69px;
+}
+
+@media (max-width: 1023px) {
+    .history {
+        padding-top: 40px;
+        padding-bottom: 27px;        
+    }
+}
+
+@media (max-width: 575px) {
+    .history {
+        position: relative;
+        padding-top: 32px;        
+        padding-bottom: 98px;               
+    }
+}

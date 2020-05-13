@@ -1,0 +1,20 @@
+@import url(__text/table__text.css);
+@import url(__row/table__row.css);
+@import url(__row-header/table__row-header.css);
+@import url(__column-left/table__column-left.css);
+@import url(__column-right/table__column-right.css);
+@import url(__analytics-month/table__analytics-month.css);
+@import url(__bar/table__bar.css);
+@import url(__scale/table__scale.css);
+@import url(__scale-value/table__scale-value.css);
+
+.table {
+    width: 100%;    
+    padding-top: 46px;    
+}
+
+@media (max-width: 575px) {
+    .table {
+        padding-top: 16px;        
+    }
+}

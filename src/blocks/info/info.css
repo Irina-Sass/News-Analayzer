@@ -1,0 +1,21 @@
+@import url(__title/info__title.css);
+@import url(__text/info__text.css);
+
+.info {
+    padding-top: 40px;
+    padding-bottom: 76px;
+}
+
+@media (max-width: 1023px) {
+    .info {
+        padding-top: 32px;
+        padding-bottom: 36px;
+    }
+}
+
+@media (max-width: 575px) {
+    .info {
+        padding-top: 16px;
+        padding-bottom: 20px;
+    }
+}

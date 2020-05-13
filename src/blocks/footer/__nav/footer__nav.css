@@ -1,0 +1,11 @@
+@media (max-width: 1023px) {
+    .footer__nav {
+        flex-basis: 58%;               
+    }
+}
+
+@media (max-width: 650px) {
+    .footer__nav {
+        flex-basis: auto;               
+    }
+}

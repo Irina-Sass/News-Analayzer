@@ -1,0 +1,9 @@
+.about-author__text {
+    padding-top: 24px;    
+}
+
+@media (max-width: 1023px) {
+    .about-author__text {
+        padding-top: 0;          
+    }
+}

@@ -1,0 +1,26 @@
+.swiper-container__gradient::before, .swiper-container__gradient::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 88px; 
+    height: 288px;   
+    z-index: 2; 
+    top: 0;   
+}
+
+.swiper-container__gradient::before {
+    background: linear-gradient(270deg, rgba(245, 246, 247, 0) 0%, #F5F6F7 100%);
+    left: 0;
+}
+
+.swiper-container__gradient::after {
+    background: linear-gradient(90deg, rgba(245, 246, 247, 0) 0%, #F5F6F7 100%);
+    right: 0;       
+}
+
+@media (max-width: 1023px) {
+    .swiper-container__gradient::before, .swiper-container__gradient::after  {
+        width: 0;
+        height: 0;        
+    }
+}

@@ -1,0 +1,9 @@
+@import url(_position_start/table__scale-value_position_start.css);
+@import url(_position_end/table__scale-value_position_end.css);
+@import url(_position_twenty-five/table__scale-value_position_twenty-five.css);
+@import url(_position_center/table__scale-value_position_center.css);
+@import url(_position_seventy-five/table__scale-value_position_seventy-five.css);
+
+.table__scale-value {
+    position: absolute;
+}

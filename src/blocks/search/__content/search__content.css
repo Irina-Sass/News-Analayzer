@@ -1,0 +1,23 @@
+.search__content {
+    max-width: 608px;    
+    box-sizing: border-box;  
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+@media (max-width: 1023px) {
+    .search__content {
+        width: 452px;
+        padding-top: 40px;
+        padding-bottom: 48px;
+    }
+}
+
+@media (max-width: 575px) {
+    .search__content {
+        width: 100%;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+}
