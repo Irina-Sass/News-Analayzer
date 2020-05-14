@@ -2,6 +2,7 @@
 @import url(__photo/about-author__photo.css);
 @import url(__description/about-author__description.css);
 @import url(__text/about-author__text.css);
+@import url(__text/_spaces_absent/about-author__text_spaces_absent.css);
 @import url(__title/about-author__title.css);
 
 .about-author {
@@ -13,7 +14,7 @@
 @media (max-width: 1023px) {
     .about-author {
         padding-top: 40px;
-        padding-bottom: 56px;        
+        padding-bottom: 50px;        
     }
 }
 
