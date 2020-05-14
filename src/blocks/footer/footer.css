@@ -24,7 +24,8 @@
 @media (max-width: 650px) {
     .footer {
         height: auto;
-        align-items: flex-start;        
+        align-items: flex-start;
+        padding-top: 20px;        
     }
 }
 
