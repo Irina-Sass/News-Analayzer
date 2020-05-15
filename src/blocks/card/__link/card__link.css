@@ -1,0 +1,23 @@
+.card__link {
+    font-family: 'Roboto Slab', 'Times New Roman', 'Times', 'Nimbus Roman No9 L', serif; 
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    color: #B6BCBF;
+    position: absolute;
+    bottom: 24px;
+} 
+
+@media (max-width: 1023px) {
+    .card__link  {
+        bottom: 16px;
+    }
+}
+
+@media (max-width: 575px) {
+    .card__link  {
+        bottom: 19px;
+    }
+}

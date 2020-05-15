@@ -1,0 +1,3 @@
+.table__column-right {
+    width: calc(100% - 104px);
+}

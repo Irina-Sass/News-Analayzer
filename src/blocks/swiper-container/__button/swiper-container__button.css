@@ -1,0 +1,26 @@
+@import url(_prev/swiper-container__button_prev.css);
+@import url(_next/swiper-container__button_next.css);
+
+.swiper-container__button {
+    background-color: #1A1B22;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    top: 146px;
+    color: #fff;
+    box-shadow: 0px 3px 10px rgba(14, 26, 57, 0.2);    
+}
+
+.swiper-container__button::after {
+    font-size: 10px;
+}
+
+.swiper-container__button:hover.swiper-container__button::after {
+    font-size: 15px;
+}
+
+@media (max-width: 1023px) {
+    .swiper-container__button  {
+        display: none;  
+    }
+}

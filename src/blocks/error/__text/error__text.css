@@ -1,0 +1,19 @@
+.error__text {
+    margin: 0 auto;
+    color: #B6BCBF;
+    max-width: 340px;
+    padding-top: 16px;
+    padding-bottom: 80px;
+}
+
+@media (max-width: 1023px) {
+    .error__text {
+        padding-bottom: 40px;       
+    }
+}
+
+@media (max-width: 575px) {
+    .error__text {
+        padding-bottom: 32px;        
+    }
+}

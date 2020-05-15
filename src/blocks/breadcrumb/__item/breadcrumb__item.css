@@ -1,0 +1,9 @@
+.breadcrumb__item {
+    display: inline;    
+}
+
+.breadcrumb__item+.breadcrumb__item:before {
+    content: "/";
+    color: #B6BCBF;
+    padding-right: 5px;
+}

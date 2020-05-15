@@ -1,0 +1,32 @@
+.tech-container {
+    display: flex;
+    justify-content: flex-end;
+    flex-basis: 64%;
+    align-items: flex-start;
+    padding-top: 93px;
+}
+
+@media (max-width: 1170px) {
+    .tech-container {        
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 1023px) {
+    .tech-container {
+        padding-top: 40px;
+        flex-basis: 100%;        
+    }
+}
+
+@media (max-width: 660px) {
+    .tech-container {
+        flex-wrap: wrap;        
+    }
+}
+
+@media (max-width: 575px) {
+    .tech-container {
+        padding: 5px 8px 0;           
+    }
+}

@@ -1,0 +1,21 @@
+@import url(__title/tech__title.css);
+
+.tech {
+    background-color:  #F5F6F7;    
+    display: flex; 
+    justify-content: flex-start;
+    padding-bottom: 88px;   
+}
+
+@media (max-width: 1023px) {
+    .tech {
+        flex-wrap: wrap;
+        padding-bottom: 40px;
+    }
+}
+
+@media (max-width: 575px) {
+    .tech {        
+        padding-bottom: 38px;
+    }
+}

@@ -1,0 +1,11 @@
+.commit__commiter {
+    display: flex;
+    align-items: center;
+    margin: 16px 0;
+}
+
+@media (max-width: 575px) {
+    .commit__commiter  {        
+        margin: 8px 0 16px;            
+    }
+}

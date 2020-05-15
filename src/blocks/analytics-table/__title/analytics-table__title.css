@@ -1,0 +1,12 @@
+@media (max-width: 1023px) {
+    .analytics-table__title {
+        font-size: 26px;
+        line-height: 30px;
+    }
+}
+
+@media (max-width: 575px) {
+    .analytics-table__title {
+        font-size: 22px;
+    }
+}

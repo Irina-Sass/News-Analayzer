@@ -1,0 +1,11 @@
+.preloader__text {
+    text-align: center;
+    color: #B6BCBF;
+    padding-top: 24px;    
+}
+
+@media (max-width: 1023px) {
+    .preloader__text {
+        padding-top: 16px;        
+    }
+}

@@ -1,0 +1,23 @@
+.search__button {
+    background-color: #2F71E5;
+    color: #fff;
+    position: absolute;
+    right: 0;
+    bottom: 0;   
+    box-shadow: 0px 5px 15px rgba(14, 26, 57, 0.2);
+}
+
+.search__button:hover {
+    background-color:  #347EFF;    
+}
+
+.search__button:active {
+    background-color:  #2A65CC;
+}
+
+@media (max-width: 575px) {
+    .search__button {
+        position: static;
+        margin-top: 16px;
+    }
+}

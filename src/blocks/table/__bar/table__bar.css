@@ -1,0 +1,8 @@
+.table__bar {
+   height: 24px; 
+   background-color: #2F71E5; 
+   color: #fff; 
+   font-weight: bold;
+   box-sizing: border-box;
+   padding: 4px 6px;   
+}

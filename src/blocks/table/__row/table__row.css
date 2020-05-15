@@ -1,0 +1,5 @@
+@import url(_type_bar/table__row_type_bar.css);
+
+.table__row {
+   display: flex;   
+}
