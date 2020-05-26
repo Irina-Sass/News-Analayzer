@@ -58,8 +58,10 @@ module.exports = {
 
         ]
     },
+    devtool: false,
 
     plugins: [
+        new webpack.SourceMapDevToolPlugin({}),
         new MiniCssExtractPlugin({
             filename: './css/[name].[contenthash].css'
         }),

@@ -1,3 +1,5 @@
+
+@import url(_inverted/table__text_inverted.css);
 .table__text {
     font-family: 'Roboto', 'Arial', 'Helvetica', 'Nimbus Sans L', sans-serif;
     font-size: 12px;
