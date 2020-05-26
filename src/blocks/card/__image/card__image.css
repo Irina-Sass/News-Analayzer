@@ -1,9 +1,8 @@
 .card__image {
     width: 100%;
-    height: auto;
-    display: block;
-    background-repeat: no-repeat;
-    background-position: center;
+    padding-bottom: 68%;
+    display: block;    
+    background-repeat: no-repeat;    
     background-size: cover;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;

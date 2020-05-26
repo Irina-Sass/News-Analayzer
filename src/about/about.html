@@ -94,53 +94,11 @@
                 <section class="history">
                     <div class="container-title history__container-title section">
                         <h2 class="title title_big history__title">История коммитов из GitHub</h2>
-                        <a href="https://github.com/Irina-Sass/" target="_blank"
+                        <a href="https://github.com/Irina-Sass/News-Analyzer/commits/master" target="_blank"
                             class="link container-title__link history__title-link">Открыть в Github</a>
                     </div>
                     <div class="swiper-container swiper-container__gradient">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide commit">
-                                <p class="commit__date">14 августа 2019 года</p>
-                                <div class="commit__commiter">
-                                    <img src="<%=require('../images/avatar-1.jpg').default%>" alt="фото автора"
-                                        class="commit__commiter-avatar">
-                                    <div class="commit__commiter-info">
-                                        <h3 class="title title_small commit__title">Антон Долинин</h3>
-                                        <p class="commit__commiter-email">anton@yandex.ru</p>
-                                    </div>
-                                </div>
-                                <p class="text commit__message">Emmet (formerly Zen Coding) is a web-developer’s toolkit
-                                    that can greatly improve your HTML & CSS workflow.</p>
-                            </div>
-                            <div class="swiper-slide commit">
-                                <p class="commit__date">14 августа 2019 года</p>
-                                <div class="commit__commiter">
-                                    <img src="<%=require('../images/avatar-2.jpg').default%>" alt="фото автора"
-                                        class="commit__commiter-avatar">
-                                    <div class="commit__commiter-info">
-                                        <h3 class="title title_small commit__title">Мария Фёдорова</h3>
-                                        <p class="commit__commiter-email">mariiifed@yandex.ru</p>
-                                    </div>
-                                </div>
-                                <p class="text commit__message">You can install this plugin directly from NetBeans
-                                    Plugin Portal: in NetBeans, open Tools > Plugins > Available plugins and find and
-                                    install Emmet plugin.</p>
-                            </div>
-                            <div class="swiper-slide commit">
-                                <p class="commit__date">14 августа 2019 года</p>
-                                <div class="commit__commiter">
-                                    <img src="<%=require('../images/avatar-3.jpg').default%>" alt="фото автора"
-                                        class="commit__commiter-avatar">
-                                    <div class="commit__commiter-info">
-                                        <h3 class="title title_small commit__title">Инга Иванова</h3>
-                                        <p class="commit__commiter-email">ingaiva@yandex.ru</p>
-                                    </div>
-                                </div>
-                                <p class="text commit__message">With Emmet, you can type CSS-like expressions that can
-                                    be dynamically parsed, and produce output depending on what you type in the abb...
-                                </p>
-                            </div>
-                        </div>
+                        <div class="swiper-wrapper"></div>
                         <div class="swiper-pagination"></div>
                         <div class="swiper-button-prev swiper-container__button swiper-container__button_prev"></div>
                         <div class="swiper-button-next swiper-container__button swiper-container__button_next"></div>
@@ -172,7 +130,7 @@
         </div>
     </div>
 
-    <script src="<%= htmlWebpackPlugin.files.chunks.about.entry %>"></script>
+    <script type="module" src="<%= htmlWebpackPlugin.files.chunks.about.entry %>"></script>
 </body>
 
 </html>

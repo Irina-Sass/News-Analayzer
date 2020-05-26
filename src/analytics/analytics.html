@@ -35,16 +35,16 @@
                         </li>
                         <li class="breadcrumb__item breadcrumb__item_active">Аналитика</li>
                     </ul>
-                    <h1 class="title title_big info__title">Вы спросили: «Путешествия»</h1>
-                    <p class="text info__text">Новостей за неделю: <span class="text text_bold">34 324</span></p>
-                    <p class="text info__text">Упоминаний в заголовках: <span class="text text_bold">235</span></p>
+                    <h1 class="title title_big info__title">Вы спросили: «<span class="info__title-search-query"></span>»</h1>
+                    <p class="text info__text">Новостей за неделю: <span class="text text_bold text__total-number-results"></span></p>
+                    <p class="text info__text">Упоминаний в заголовках: <span class="text text_bold text__number-results-headers"></span></p>
                 </section>
                 <section class="analytics-table  section">
                     <h2 class="title title_small analytics-table__title">Аналитика по дням</h2>
                     <div class="table">
                         <div class="table__row table__row-header">
                             <div class="table__column-left">
-                                <p class="table__text">Дата <span class="table__analytics-month">(август)</span></p>
+                                <p class="table__text">Дата <span class="table__analytics-month"></span></p>
                             </div>
                             <div class="table__column-right">
                                 <p class="table__text">Кол-во упоминаний</p>
@@ -70,76 +70,20 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="table__row table__row_type_bar">
-                            <div class="table__column-left">
-                                <p class="text">19, пн</p>
-                            </div>
-                            <div class="table__column-right">
-                                <div class="table__bar" style='width: 15%'>
-                                    <p class="table__text">15</p>
+                        <div class="table__rows">
+                            <template id="row-template">
+                                <div class="table__row table__row_type_bar">
+                                    <div class="table__column-left">
+                                        <p class="text date"></p>
+                                    </div>
+                                    <div class="table__column-right">
+                                        <div class="table__bar">
+                                            <p class="table__text"></p>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="table__row table__row_type_bar">
-                            <div class="table__column-left">
-                                <p class="text">20, вт</p>
-                            </div>
-                            <div class="table__column-right">
-                                <div class="table__bar" style='width: 18%'>
-                                    <p class="table__text">18</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="table__row table__row_type_bar">
-                            <div class="table__column-left">
-                                <p class="text">21, ср</p>
-                            </div>
-                            <div class="table__column-right">
-                                <div class="table__bar" style='width: 11%'>
-                                    <p class="table__text">11</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="table__row table__row_type_bar">
-                            <div class="table__column-left">
-                                <p class="text">22, чт</p>
-                            </div>
-                            <div class="table__column-right">
-                                <div class="table__bar" style='width: 39%'>
-                                    <p class="table__text">39</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="table__row table__row_type_bar">
-                            <div class="table__column-left">
-                                <p class="text">23, пт</p>
-                            </div>
-                            <div class="table__column-right">
-                                <div class="table__bar" style='width: 45%'>
-                                    <p class="table__text">45</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="table__row table__row_type_bar">
-                            <div class="table__column-left">
-                                <p class="text">24, сб</p>
-                            </div>
-                            <div class="table__column-right">
-                                <div class="table__bar" style='width: 73%'>
-                                    <p class="table__text">73</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="table__row">
-                            <div class="table__column-left">
-                                <p class="text">25, вс</p>
-                            </div>
-                            <div class="table__column-right">
-                                <div class="table__bar" style='width: 34%'>
-                                    <p class="table__text">34</p>
-                                </div>
-                            </div>
-                        </div>
+                            </template>                            
+                        </div>                       
                         <div class="table__row">
                             <div class="table__column-left"></div>
                             <div class="table__column-right table__scale">
@@ -190,7 +134,6 @@
         </div>
     </div>
 
-    <script src="<%= htmlWebpackPlugin.files.chunks.analytics.entry %>"></script>
+    <script type="module" src="<%= htmlWebpackPlugin.files.chunks.analytics.entry %>"></script>
 </body>
-
 </html>
