@@ -25,8 +25,11 @@ const createCard = ({ urlToImage, date, title, description, source, url }) => {
     const newsCard = new NewsCard();
     return newsCard.create({ urlToImage, date, title, description, source, url });
 }
-const newsCardList = new NewsCardList(document.querySelector('.cards'), createCard, resultButton, () => {showMoreCards(CARDS_FOR_VIEW)});
+const newsCardList = new NewsCardList(document.querySelector('.cards'), createCard, resultButton, showMoreCardsCallback);
 
+function showMoreCardsCallback() {
+    showMoreCards(CARDS_FOR_VIEW);
+}
 // функция отображает или скрывает указанный блок
 function displayElement(element, display) {
     if (display) {
@@ -88,5 +91,19 @@ function searchNews(keyword) {
 
         .finally(() => {
             displayElement(preloader, false);
+            searchInput.toggleFormState(true);
         });
 }
+
+function loadSavedResults() {
+    if (dataStorage.getDataStorage(DATA_STORAGE_QUERY_KEY)) {
+        elementInput.value = dataStorage.getDataStorage(DATA_STORAGE_QUERY_KEY);
+    }
+    
+    if  (dataStorage.getDataStorage(DATA_STORAGE_ARTICLES_KEY)) {
+        showMoreCards(CARDS_FOR_VIEW);
+        displayElement(result, true);
+    }
+}
+
+loadSavedResults();

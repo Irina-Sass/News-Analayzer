@@ -1,5 +1,5 @@
 function determineDate(days) {
-    let date = convertDateToUTC(new Date());  
+    const date = convertDateToUTC(new Date());  
     date.setDate(date.getDate() - days);       
     return date;    
 }

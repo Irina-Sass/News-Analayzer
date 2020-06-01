@@ -22,7 +22,7 @@ export class SearchInput {
     }
 
     //метод активирует/дезактивирует форму
-    _toggleFormState(flag) {
+    toggleFormState(flag) {
         if (!flag) {
             this.element.setAttribute('disabled', true);
             this.buttonSubmit.setAttribute('disabled', true);
@@ -46,9 +46,8 @@ export class SearchInput {
             event.preventDefault();
             this._checkInputValidity();
             if (this.element.checkValidity()) {
-                this._toggleFormState(false);
-                this.callback(this.element.value);
-                this._toggleFormState(true);
+                this.toggleFormState(false);
+                this.callback(this.element.value);                       
             }             
         })    
     }    

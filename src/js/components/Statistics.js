@@ -14,12 +14,12 @@ export class Statistics {
     _groupNewsDay(newsDaysDepth) {
         const arr = [];
         for (let days = 0; days <= newsDaysDepth; days++) {
-            let statisticDay = determineDate(days);
+            const statisticDay = determineDate(days);
             statisticDay.setHours(0, 0, 0, 0);
             arr.push({date: statisticDay, articles: [], keywordCount: 0});                      
         }
         this.arr.forEach(item => {
-            let publishedDay = convertDateToUTC(new Date(item.publishedAt));
+            const publishedDay = convertDateToUTC(new Date(item.publishedAt));
             publishedDay.setHours(0, 0, 0, 0);           
             let dateStatistics = arr.find(elem => Date.parse(elem.date) === Date.parse(publishedDay));
             if (dateStatistics) {
