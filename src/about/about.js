@@ -22,34 +22,33 @@ var swiper = new Swiper('.swiper-container', {
   },
 
   breakpoints: {
-
     1023: {
       centeredSlides: true,
       loop: true,
-      spaceBetween: 16
+      spaceBetween: 16,
     },
-  }
+  },
 });
 
 const containerCommits = document.querySelector('.swiper-wrapper');
 const createCommitCard = ({ name, email, date, message, avatarUrl }) => {
-  const card = new CommitCard;
+  const card = new CommitCard();
   return card.create({ name, email, date, message, avatarUrl });
-}
+};
 
 const githubApi = new GithubApi({
   owner: OWNER,
-  repo: REPO
+  repo: REPO,
 });
 
 const commitCardList = new CommitCardList(containerCommits, createCommitCard);
 
-
-githubApi.getCommits()
-  .then(data => {    
+githubApi
+  .getCommits()
+  .then((data) => {
     commitCardList.render(data.slice(0, COUNT_COMMITS));
     swiper.init();
   })
   .catch((err) => {
     console.log(err);
-  })     
+  });
