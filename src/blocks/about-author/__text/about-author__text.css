@@ -1,11 +1,9 @@
-@import url(_hidden/about-author__text_hidden.css);
-
 .about-author__text {
-    padding-top: 24px;    
+  padding-top: 24px;
 }
 
 @media (max-width: 1023px) {
-    .about-author__text {
-        padding-top: 0;          
-    }
+  .about-author__text {
+    padding-top: 0;
+  }
 }

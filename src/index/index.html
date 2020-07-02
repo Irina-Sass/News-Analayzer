@@ -33,9 +33,12 @@
                         <h1 class="search__title">Что в мире творится?</h1>
                         <p class="text search__text">Введите в поиске любую тему и узнайте, насколько популярной она
                             была в новостях за прошедшую неделю.</p>
-                        <form class="search__form">
-                            <input type="search" placeholder="Введите тему новости" class="search__field" required>
-                            <button type="submit" class="button search__button button_theme_sky">Искать</button>
+                        <form class="search__form" novalidate>
+                            <input type="search" placeholder="Введите тему новости" class="search__field" required
+                                minlength="2">
+                            <span class="search__form-error"></span>
+                            <button type="submit"
+                                class="button search__button search__button_active button_theme_sky">Искать</button>
                         </form>
                     </div>
                 </section>
@@ -47,8 +50,8 @@
                     <div class="error">
                         <img src="<%=require('../images/not-found_v1.svg').default%>" alt="Ошибка загрузки"
                             class="error__image">
-                        <p class="title title_small">Ничего не найдено</p>
-                        <p class="text error__text">К сожалению по вашему запросу ничего не найдено.</p>
+                        <p class="title title_small"></p>
+                        <p class="text error__text"></p>
                     </div>
                     <div class="result section">
                         <div class="container-title">
@@ -56,46 +59,7 @@
                             <a href="./analytics.html" target="_self" class="link container-title__link">Посмотреть
                                 аналитику</a>
                         </div>
-                        <div class="cards">
-                            <div class="card">
-                                <img src="<%=require('../images/card_1.jpg').default%>" alt="фото новости"
-                                    class="card__image">
-                                <div class="card__data">
-                                    <p class="card__date">2 августа, 2019</p>
-                                    <h3 class="title title_small card__title">Национальное достояние – парки</h3>
-                                    <p class="text card__text">В 2016 году Америка отмечала важный юбилей: сто лет
-                                        назад здесь начала складываться система национальных парков – охраняемых
-                                        территорий, где и сегодня каждый может приобщиться к природе.</p>
-                                    <a href="https://lenta.ru/" target="_blank" class="link card__link">Лента.ру</a>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <img src="<%=require('../images/card_2.jpg').default%>" alt="фото новости"
-                                    class="card__image">
-                                <div class="card__data">
-                                    <p class="card__date">2 августа, 2019</p>
-                                    <h3 class="title title_small card__title">Лесные огоньки: история одной
-                                        фотографии</h3>
-                                    <p class="text card__text">Фотограф отвлеклась от освещения суровой политической
-                                        реальности Мексики, чтобы запечатлеть ускользающую красоту одного из местных
-                                        чудес природы.</p>
-                                    <a href="https://meduza.io/" target="_blank" class="link card__link">Медуза</a>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <img src="<%=require('../images/card_3.jpg').default%>" alt="фото новости"
-                                    class="card__image">
-                                <div class="card__data">
-                                    <p class="card__date">2 августа, 2019</p>
-                                    <h3 class="title title_small card__title">«Первозданная тайга»: новый фотопроект
-                                        Игоря Шпиленка</h3>
-                                    <p class="text card__text">Знаменитый фотограф снимает первозданные леса России,
-                                        чтобы рассказать о необходимости их сохранения. В этот раз он отправился в
-                                        Двинско-Пинежскую тайгу, где...</p>
-                                    <a href="https://ria.ru/" target="_blank" class="link card__link">Риа</a>
-                                </div>
-                            </div>
-                        </div>
+                        <div class="cards"></div>
                         <button class="button result__button">Показать еще</button>
                     </div>
                 </section>
@@ -110,18 +74,18 @@
                     </picture>
                     <div class="about-author__description">
                         <h2 class="title title_big about-author__title">Об авторе</h2>
-                        <p class="text about-author__text">Это блок с описанием автора проекта. Здесь следует указать,
-                            как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.</p>
-                        <p class="text about-author__text">Также можно рассказать о процессе обучения в Практикуме, чему
-                            вы тут научились, и чем можете помочь потенциальным заказчикам. <span class="text about-author__text about-author__text_hidden">Если хотите, оставьте свои
-                                контакты: email и телефон. Так заказчики смогут с вами связаться.</span></p>
-                        
+                        <p class="text about-author__text">Меня зовут Ирина Сасс. Я Прошла курс Яндекс.Практикума по
+                            специальности фронтенд-разработчик, где изучала HTML5, CSS3 и JavaScript. Научилась верстать
+                            адаптивные и кроссбраузерные сайты, собирать проекты с помощью Webpack, работать с системой
+                            контроля версий Git, а также писать код по БЭМ методологии.</p>
+
+
                     </div>
                 </section>
             </main>
 
             <footer class="footer section">
-                <p class="footer__copyright">© 2019 Supersite</p>
+                <p class="footer__copyright">© 2020 Supersite</p>
                 <nav class="footer__nav">
                     <ul class="menu-row footer__menu">
                         <li class="menu-row__item footer__nav-item"><a href="./index.html" target="_self"
