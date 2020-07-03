@@ -21,6 +21,8 @@ import {
   NEWS_DAYS_DEPTH,
   DATA_STORAGE_ARTICLES_KEY,
   DATA_STORAGE_QUERY_KEY,
+  FROM,
+  TO,
 } from '../js/constants/commonConstants.js';
 
 const form = document.querySelector('.search__form');
@@ -88,18 +90,27 @@ function showMoreCards(cardsForView) {
 }
 
 function searchNews(keyword) {
-  const dateFrom = determineDate(0).toISOString();
-  const dateTo = determineDate(NEWS_DAYS_DEPTH).toISOString();
+  const dateTo = new Date();
+  const dateFrom = determineDate(dateTo, NEWS_DAYS_DEPTH);
   displayElement(error, false);
   displayElement(result, false);
   displayElement(preloader, true);
   newsCardList.clear();
   newsApi
-    .getNews(keyword, dateTo, dateFrom, PAGE_SIZE, LANGUAGE, SORT_BY)
+    .getNews(
+      keyword,
+      dateFrom.toISOString(),
+      dateTo.toISOString(),
+      PAGE_SIZE,
+      LANGUAGE,
+      SORT_BY
+    )
     .then((data) => {
       if (data.articles.length > 0) {
         dataStorage.setDataStorage(DATA_STORAGE_ARTICLES_KEY, data.articles);
         dataStorage.setDataStorage(DATA_STORAGE_QUERY_KEY, keyword);
+        dataStorage.setDataStorage(FROM, dateFrom.getTime());
+        dataStorage.setDataStorage(TO, dateTo.getTime());
         showMoreCards(CARDS_FOR_VIEW);
         displayElement(result, true);
       } else {

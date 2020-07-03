@@ -4,7 +4,7 @@ https://irina-sass.github.io/News-Analyzer/
 
 ## Версия проекта
 
-v0.1.3
+v0.1.4
 
 ## Описание проекта
 
