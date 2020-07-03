@@ -7,6 +7,8 @@ import {
   DATA_STORAGE_ARTICLES_KEY,
   DATA_STORAGE_QUERY_KEY,
   FIELD_TITLE,
+  FROM,
+  TO,
 } from '../js/constants/commonConstants.js';
 
 const searchQuery = document.querySelector('.info__title-search-query');
@@ -32,12 +34,16 @@ function getTotalNumberResults(arr) {
 }
 
 const articles = dataStorage.getDataStorage(DATA_STORAGE_ARTICLES_KEY);
+const from = dataStorage.getDataStorage(FROM);
+const to = dataStorage.getDataStorage(TO);
 const query = getSearchQuery();
 const statistics = new Statistics({
   arr: articles,
   query,
   month,
   container,
+  from,
+  to,
 });
 
 searchQuery.textContent = query;
