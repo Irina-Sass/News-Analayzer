@@ -32,7 +32,7 @@ const result = document.querySelector('.result');
 const errorTitle = error.querySelector('.title');
 const errorText = error.querySelector('.error__text');
 const resultButton = document.querySelector('.result__button');
-const newsApi = new NewsApi(API_KEY);
+const newsApi = new NewsApi(API_KEY, BASE_URL);
 const dataStorage = new DataStorage();
 const searchInput = new SearchInput(
   form,
